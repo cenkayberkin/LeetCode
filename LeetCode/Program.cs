@@ -6,9 +6,10 @@ namespace LeetCode
 	{
 		public static void Main (string[] args)
 		{
-			Squareroot s = new Squareroot ();
+			ContainsDup d = new ContainsDup ();
+			int[] list = new int[5]{ 1,2,3,4,5};
 
-			Console.WriteLine (s.MySqrt (2147395599));
+			Console.WriteLine (d.ContainsDuplicate (list));
 		}
 	}
 }
