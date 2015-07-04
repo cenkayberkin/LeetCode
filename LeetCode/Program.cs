@@ -6,10 +6,20 @@ namespace LeetCode
 	{
 		public static void Main (string[] args)
 		{
-			ContainsDup d = new ContainsDup ();
-			int[] list = new int[5]{ 1,2,3,4,5};
+			char[,] input = new char[9,9] {
+				{'7','2','.','.','3','9','.','.','6'},
+				{'.','.','.','.','5','.','3','.','1'},
+				{'.','.','.','.','.','7','.','.','5'},
+				{'.','.','.','.','.','.','1','.','.'},
+				{'9','.','6','.','.','.','.','.','2'},
+				{'.','3','.','.','.','.','5','.','.'},
+				{'3','7','.','.','.','4','8','.','.'},
+				{'6','.','8','9','7','.','.','3','.'},
+				{'5','.','.','.','.','.','.','.','.'}
+			};
 
-			Console.WriteLine (d.ContainsDuplicate (list));
+			SudokuSolver s = new SudokuSolver ();
+			Console.WriteLine (s.IsValidSudoku (input));
 		}
 	}
 }

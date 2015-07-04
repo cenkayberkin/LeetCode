@@ -38,6 +38,7 @@
     <Compile Include="MinStack.cs" />
     <Compile Include="Squareroot.cs" />
     <Compile Include="ContainsDup.cs" />
+    <Compile Include="ValidSudoku.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
