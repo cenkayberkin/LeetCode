@@ -18,12 +18,10 @@ namespace LeetCode
 //				{'5','.','.','.','.','.','.','.','.'}
 //			};
 
+			int a = 1534236469;
+			ReverseInteger i = new ReverseInteger ();
 
-
-			ContainsDup d = new ContainsDup ();
-			int[] nums = new int[]{ 1,0,1,1};
-
-			Console.WriteLine (d.ContainsNearbyDuplicate (nums, 1));
+			Console.WriteLine (i.Reverse(a));
 		}
 	}
 }

@@ -39,6 +39,7 @@
     <Compile Include="Squareroot.cs" />
     <Compile Include="ContainsDup.cs" />
     <Compile Include="ValidSudoku.cs" />
+    <Compile Include="ReverseInteger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
