@@ -17,11 +17,9 @@ namespace LeetCode
 //				{'6','.','8','9','7','.','.','3','.'},
 //				{'5','.','.','.','.','.','.','.','.'}
 //			};
+			RomanAlph r = new RomanAlph();
 
-			int a = 1534236469;
-			ReverseInteger i = new ReverseInteger ();
-
-			Console.WriteLine (i.Reverse(a));
+			Console.WriteLine (r.RomanToInt ("MDLXX"));
 		}
 	}
 }

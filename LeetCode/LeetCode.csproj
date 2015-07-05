@@ -40,6 +40,7 @@
     <Compile Include="ContainsDup.cs" />
     <Compile Include="ValidSudoku.cs" />
     <Compile Include="ReverseInteger.cs" />
+    <Compile Include="RomantoInt.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
