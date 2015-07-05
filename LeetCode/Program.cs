@@ -24,15 +24,14 @@ namespace LeetCode
 			ListNode n4 = new ListNode (4);
 			ListNode n5 = new ListNode (5);
 
+			n1.next = n2;
+			n2.next = n3;
+			n3.next = n4;
+			n4.next = n5;
+			n5.next = n1;
 
-			RemoveNthNode r = new RemoveNthNode ();
-
-			var head = r.RemoveNthFromEnd (n1, 1);
-			while (head != null) {
-				Console.WriteLine (head.val);
-				head = head.next;
-			}
-		
+			Cycle c = new Cycle ();
+			Console.WriteLine (c.HasCycle(n1));
 		}
 	}
 }
