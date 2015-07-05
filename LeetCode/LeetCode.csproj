@@ -43,6 +43,7 @@
     <Compile Include="RomantoInt.cs" />
     <Compile Include="RemoveNthNode.cs" />
     <Compile Include="Cycle.cs" />
+    <Compile Include="ListMerger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
