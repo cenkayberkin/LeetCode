@@ -41,6 +41,7 @@
     <Compile Include="ValidSudoku.cs" />
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="RomantoInt.cs" />
+    <Compile Include="RemoveNthNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
