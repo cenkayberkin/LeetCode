@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace LeetCode
 {
@@ -17,39 +19,25 @@ namespace LeetCode
 //				{'6','.','8','9','7','.','.','3','.'},
 //				{'5','.','.','.','.','.','.','.','.'}
 //			};
+//
+//			Interval i1 = new Interval (1,3);
+//			Interval i2 = new Interval (2,6);
+//			Interval i3 = new Interval (8,10);
+//			Interval i4 = new Interval (15,18);
+//
+//			List<Interval> list = new List<Interval> ();
+//			list.Add (i1);
+//			list.Add (i2);
+//			list.Add (i3);
+//			list.Add (i4);
 
-			ListNode n1 = new ListNode (1);
-			ListNode n2 = new ListNode (5);
-			ListNode n3 = new ListNode (10);
-			ListNode n4 = new ListNode (15);
+			MergeSortedArrays m = new MergeSortedArrays ();
+			int[] a1 = { 0 };
+			int[] a2 = { 1 };
 
-			ListNode n7 = new ListNode (2);
-			ListNode n8 = new ListNode (3);
-			ListNode n9 = new ListNode (7);
-			ListNode n10 = new ListNode (12);
-			ListNode n11 = new ListNode (16);
-			ListNode n12 = new ListNode (32);
-
-			n1.next = n2;
-			n2.next = n3;
-			n3.next = n4;
-
-			n7.next = n8;
-			n8.next = n9;
-			n9.next = n10;
-			n10.next = n11;
-			n11.next = n12;
-
-
-			ListNode specialNode = new ListNode (0);
-
-			ListMerger m = new ListMerger ();
-			var start = m.MergeTwoLists (null, specialNode);
-
-			while (start != null) {
-				Console.WriteLine (start.val);
-				start = start.next;
-			}
+			MergeSortedArrays s = new MergeSortedArrays ();
+			s.Merge (a1, 0, a2, 1);
+			Console.WriteLine (string.Join(" ", a1));
 
 		}
 	}
