@@ -31,13 +31,25 @@ namespace LeetCode
 //			list.Add (i3);
 //			list.Add (i4);
 
-			MergeSortedArrays m = new MergeSortedArrays ();
-			int[] a1 = { 0 };
-			int[] a2 = { 1 };
+			ListNode n1 = new ListNode (1);
+			ListNode n2 = new ListNode (1);
+			ListNode n3 = new ListNode (2);
+			ListNode n4 = new ListNode (3);
+			ListNode n5 = new ListNode (5);
 
-			MergeSortedArrays s = new MergeSortedArrays ();
-			s.Merge (a1, 0, a2, 1);
-			Console.WriteLine (string.Join(" ", a1));
+			n1.next = n2;
+			n2.next = n3;
+
+
+			RemoveElementLinkedList l = new RemoveElementLinkedList ();
+			var head = n1;
+			var t = l.RemoveElements (head,1);
+
+			while (t != null)
+			{
+				Console.WriteLine (t.val);	
+				t = t.next;
+			}
 
 		}
 	}

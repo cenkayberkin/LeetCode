@@ -46,6 +46,7 @@
     <Compile Include="ListMerger.cs" />
     <Compile Include="MergeRange.cs" />
     <Compile Include="MergeSortedArrays.cs" />
+    <Compile Include="RemoveElementLinkedList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
