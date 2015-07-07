@@ -27,30 +27,16 @@ namespace LeetCode
 //
 //			List<Interval> list = new List<Interval> ();
 //			list.Add (i1);
+
 //			list.Add (i2);
 //			list.Add (i3);
 //			list.Add (i4);
 
-			ListNode n1 = new ListNode (1);
-			ListNode n2 = new ListNode (1);
-			ListNode n3 = new ListNode (2);
-			ListNode n4 = new ListNode (3);
-			ListNode n5 = new ListNode (5);
-
-			n1.next = n2;
-			n2.next = n3;
-
-
-			RemoveElementLinkedList l = new RemoveElementLinkedList ();
-			var head = n1;
-			var t = l.RemoveElements (head,1);
-
-			while (t != null)
-			{
-				Console.WriteLine (t.val);	
-				t = t.next;
-			}
-
+		
+			StringProblems s = new StringProblems ();
+			int[] list = new int[]{1,2,3,5,5,5,5,5,6,7};
+			Console.WriteLine (s.MajorityElement (list));
+	
 		}
 	}
 }
