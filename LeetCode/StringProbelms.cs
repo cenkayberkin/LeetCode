@@ -8,9 +8,32 @@ namespace LeetCode
 	{
 		public int RemoveDuplicates(int[] nums) 
 		{
+			if (nums.Length == 0)  { return 0; }
+			if (nums.Length == 1)  { return 1; }
 
+			int cur = 0;
 
-			return 0;
+			for (int i = 1; i < nums.Length; i++) 
+			{
+				if (nums [i - 1] != nums [i]) {
+					nums [cur] = nums [i - 1];
+					cur += 1;
+				}
+
+				if (i + 1 == nums.Length) {
+					if (cur == 0) {
+						cur += 1;
+					} else if (nums [cur - 1] != nums [i]) {
+						nums [cur] = nums [i];
+						cur += 1;
+					} else if (nums [i - 1] != nums [i]) {
+						nums [cur] = nums [i];
+						cur += 1;
+					}
+				}
+			}
+				
+			return cur;
 		}
 
 		public int MajorityElement(int[] nums) 

@@ -32,11 +32,10 @@ namespace LeetCode
 //			list.Add (i3);
 //			list.Add (i4);
 
-		
 			StringProblems s = new StringProblems ();
-			int[] list = new int[]{1,2,3,5,5,5,5,5,6,7};
-			Console.WriteLine (s.MajorityElement (list));
-	
+			int[] list = new int[]{1,2};
+			int[] list1 = new int[]{};
+			Console.WriteLine (s.RemoveDuplicates(list));	
 		}
 	}
 }
