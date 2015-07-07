@@ -43,11 +43,11 @@
     <Compile Include="RomantoInt.cs" />
     <Compile Include="RemoveNthNode.cs" />
     <Compile Include="Cycle.cs" />
-    <Compile Include="ListMerger.cs" />
     <Compile Include="MergeRange.cs" />
     <Compile Include="MergeSortedArrays.cs" />
     <Compile Include="RemoveElementLinkedList.cs" />
     <Compile Include="StringProbelms.cs" />
+    <Compile Include="ListOperations.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

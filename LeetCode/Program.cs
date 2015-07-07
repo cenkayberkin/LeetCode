@@ -20,22 +20,25 @@ namespace LeetCode
 //				{'5','.','.','.','.','.','.','.','.'}
 //			};
 //
-//			Interval i1 = new Interval (1,3);
-//			Interval i2 = new Interval (2,6);
-//			Interval i3 = new Interval (8,10);
-//			Interval i4 = new Interval (15,18);
-//
-//			List<Interval> list = new List<Interval> ();
-//			list.Add (i1);
+			ListNode n1 = new ListNode(1);
+			ListNode n2 = new ListNode(2);
+			ListNode n3 = new ListNode(3);
+			ListNode n4 = new ListNode(4);
+			ListNode n5 = new ListNode(5);
 
-//			list.Add (i2);
-//			list.Add (i3);
-//			list.Add (i4);
+			n1.next = n2;
+			n2.next = n3;
+			n3.next = n4;
+			n4.next = n5;
 
-			StringProblems s = new StringProblems ();
-			int[] list = new int[]{1,2};
-			int[] list1 = new int[]{};
-			Console.WriteLine (s.RemoveDuplicates(list));	
+			ListOperations o = new ListOperations ();
+			var head = o.ReverseListRecursive (n1);
+
+			var tmp = head;
+			while (tmp != null) {
+				Console.WriteLine (tmp.val);
+				tmp = tmp.next;
+			}
 		}
 	}
 }
